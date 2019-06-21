@@ -1,12 +1,11 @@
 package ru.semenov.study;
 
-abstract class Obrabotka extends Vuvod
-{
+abstract class Proc extends Output{
     protected String[] line=new String[2];
     private int a=0;
     private int b=0;
     public String[] Num={"I","II","III","IV","V","VI","VII","VIII","IX","X"};
-    public void obrabotka() throws EnterException {
+    public void proc() throws EnterException {
         for (int i = 0; i < 10; i++) {
             if(Num[i].equals(line[0]))
             {
