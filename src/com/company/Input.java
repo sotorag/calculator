@@ -2,7 +2,7 @@ package ru.semenov.study;
 
 public class Input extends Calculate{
     private String textLine;
-    public Vvod(String textLine)
+    public Input(String textLine)
     {
         this.textLine=textLine;
     }
