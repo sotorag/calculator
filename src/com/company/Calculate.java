@@ -1,4 +1,4 @@
-package com.company;
+package ru.semenov.study;
 
 abstract class Calculate extends Obrabotka{
     protected int sum() throws EnterException{
