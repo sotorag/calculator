@@ -1,6 +1,6 @@
-package com.company;
+package ru.semenov.study;
 
-public class Vvod extends Calculate{
+public class Input extends Calculate{
     private String textLine;
     public Vvod(String textLine)
     {
@@ -13,12 +13,11 @@ public class Vvod extends Calculate{
 
 
 
-    public int vvod() throws EnterException
+    public int input() throws EnterException
     {
         if (textLine.contains("+")) {
             super.line = textLine.split("\\+", 2);
             return sum();
- //           return 0;
         }
         else {
             if (textLine.contains("-")) {
