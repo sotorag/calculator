@@ -8,6 +8,6 @@ public class Main {
         Scanner in= new Scanner(System.in);
         Input a=new Input(in.nextLine());
         a.input() ;
-        System.out.println(a.vuvod());
+        System.out.println(a.output());
     }
 }
