@@ -1,47 +1,47 @@
-package com.company;
+package ru.semenov.study;
 
-abstract class Vuvod{
-    private String vuvod="";
+abstract class Output{
+    private String output="";
     protected int answer;
     protected String[] flag=new String[2];
-    public String vuvod()
+    public String output()
     {
 
         if(flag[0]=="Arabic")
-            vuvod=vuvod+answer;
+            output=output+answer;
         else
         {
             if(answer==100)
-                return vuvod=vuvod+"C";
+                return output=output+"C";
             if(answer>89) {
-                vuvod = vuvod + "XC";
+                output = output + "XC";
                 answer = answer - 90;
             }
             if(answer>49){
-                vuvod = vuvod + "L";
+                output = output + "L";
                 answer = answer - 50;
             }
             if(answer>39){
-                vuvod = vuvod + "XL";
+                output = output + "XL";
                 answer = answer - 40;
             }
             while (answer>9) {
-                vuvod = vuvod + "X";
+                output = output + "X";
                 answer = answer - 10;
             }
             if(answer==9)
-                return vuvod = vuvod+"IX";
+                return output = output+"IX";
             if(answer>4){
-                vuvod = vuvod + "V";
+                output = output + "V";
                 answer = answer - 5;
             }
             if(answer==4)
-                return vuvod = vuvod+"IV";
+                return output = output+"IV";
             while (answer>0) {
-                vuvod = vuvod + "I";
+                output = output + "I";
                 answer = answer - 1;
             }
         }
-        return vuvod;
+        return output;
     }
 }
