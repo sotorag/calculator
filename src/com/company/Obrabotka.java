@@ -1,4 +1,4 @@
-package com.company;
+package ru.semenov.study;
 
 abstract class Obrabotka extends Vuvod
 {
