@@ -1,4 +1,4 @@
-package com.company;
+package ru.semenov.study;
 
 public class EnterException extends Exception {
     public EnterException(String message){
